@@ -32,6 +32,53 @@
     ['Светильники SPATIAL', 'Коллекции SPATIAL'],
     ['мы делаем свет', 'свет как искусство'],
     ['Стильное и модное освещение', 'Современный свет с характером'],
+    ['ИЗГОТОВЛЕНО НА ЗАКАЗ', 'СОЗДАНО ДЛЯ ВАШЕГО ИНТЕРЬЕРА'],
+    ['Все светильники Spatial изготавливаются вручную', 'Каждый светильник SPATIAL собирается вручную'],
+    ['нашей командой специалистов', 'командой мастеров бренда'],
+    [
+      'Благодаря собственному производству, мы можем изготовить люстру в точном соответствии с вашими предпочтениями.',
+      'Собственное производство позволяет точно адаптировать размер, отделку и композицию модели под ваш интерьер.',
+    ],
+    [
+      'В работе мы используем оригинальные кристаллы, жемчуг, стекольные элементы и ткань.',
+      'Мы работаем с кристаллами, жемчугом, стеклом и текстилем, внимательно подбирая сочетание материалов.',
+    ],
+    [
+      'В ассортименте нашего бренда есть светильники как из складской программы, так и по индивидуальным эскизам, выполняемые в быстрые сроки.',
+      'Доступны готовые коллекции и индивидуальное изготовление по эскизам дизайнера.',
+    ],
+    [
+      '«SPATIAL» в переводе с английского означает «пространственный». Вся коллекция света нашего бренда - про воздух, эстетику и стиль.',
+      'SPATIAL — свет, который формирует характер пространства. В основе коллекций — чистые линии, выразительные материалы и точный баланс эстетики и функции.',
+    ],
+    [
+      'Наша команда имеет десятилетний опыт в дистрибьюции освещения, который помог нам создать собственный бренд дизайнерского света SPATIAL.',
+      'Опыт команды в световом дизайне и производстве помогает создавать модели для частных и общественных интерьеров.',
+    ],
+    ['В основу бренда заложены важные аспекты современного освещения:', 'В каждой коллекции мы соединяем:'],
+    ['трендовый минимализм;', 'выразительную лаконичность;'],
+    ['безопасность использования;', 'продуманную безопасность;'],
+    ['высокое качество продукции;', 'точность ручной сборки;'],
+    ['новейшие возможности управления светом', 'современные сценарии управления светом'],
+    [
+      'Соглашаюсь на отправку я принимаю общие условия и политику конфиденциальности',
+      'Отправляя форму, я принимаю условия обработки персональных данных и политику конфиденциальности.',
+    ],
+    ['Правила оплаты и безопасность платежей', 'Оплата и безопасность'],
+  ]);
+  const MICRO_BRAND_PALETTE = new Map([
+    ['#3a3330', '#403936'],
+    ['#231e1b', '#292321'],
+    ['#2f2e2a', '#36312e'],
+    ['#393331', '#3f3835'],
+    ['#3b3330', '#403936'],
+    ['#2f2927', '#302925'],
+    ['#dfdbda', '#e4ddd4'],
+    ['#f1cb7f', '#caa86e'],
+    ['#f3cf82', '#d4b77e'],
+    ['#daba77', '#c49d63'],
+    ['#543c0d', '#80643b'],
+    ['#816334', '#9b7444'],
   ]);
   let searchIndexPromise;
 
@@ -275,19 +322,46 @@
     Reflect.apply(nativeSubmit, this, []);
   };
 
+  function replaceMicroBrandColors(value) {
+    let result = value;
+    MICRO_BRAND_PALETTE.forEach((replacement, original) => {
+      result = result.replace(new RegExp(original, 'gi'), replacement);
+    });
+    return result;
+  }
+
+  function applyMicroBrandPalette() {
+    document.querySelectorAll('[style]').forEach((element) => {
+      const current = element.getAttribute('style') || '';
+      const updated = replaceMicroBrandColors(current);
+      if (updated !== current) element.setAttribute('style', updated);
+    });
+
+    document.querySelectorAll('style').forEach((style) => {
+      const current = style.textContent || '';
+      const updated = replaceMicroBrandColors(current);
+      if (updated !== current) style.textContent = updated;
+    });
+  }
+
   function installMicroBrandStyles() {
     const themeColor = document.querySelector('meta[name="theme-color"]');
-    if (themeColor) themeColor.setAttribute('content', '#342e2b');
+    if (themeColor) themeColor.setAttribute('content', '#403936');
 
     const style = document.createElement('style');
     style.id = 'spatial-micro-brand-styles';
     style.textContent = `
       :root {
-        --spatial-charcoal: #342e2b;
-        --spatial-charcoal-deep: #211d1b;
-        --spatial-champagne: #d7b77a;
-        --spatial-champagne-light: #ead5ad;
-        --spatial-ivory: #f7f3ed;
+        --spatial-charcoal: #403936;
+        --spatial-charcoal-deep: #292321;
+        --spatial-champagne: #caa86e;
+        --spatial-champagne-light: #e1c58e;
+        --spatial-ivory: #f5f0e9;
+      }
+
+      html,
+      body {
+        background-color: var(--spatial-charcoal) !important;
       }
 
       #mens,
@@ -307,11 +381,24 @@
       }
 
       .drk2 {
-        background-image: linear-gradient(to bottom, rgba(33, 29, 27, 0.98) 10%, transparent 100%) !important;
+        background-image: linear-gradient(to bottom, rgba(41, 35, 33, 0.98) 10%, transparent 100%) !important;
       }
 
       .drk22 {
-        background-image: linear-gradient(to bottom, rgba(25, 22, 20, 0.94) 30%, transparent 98%) !important;
+        background-image: linear-gradient(to bottom, rgba(32, 27, 25, 0.94) 30%, transparent 98%) !important;
+      }
+
+      .smallbadaboom {
+        background: var(--spatial-charcoal) !important;
+        border-top: 1px solid rgba(225, 197, 142, 0.22);
+      }
+
+      .spatial-footer-intro {
+        width: min(680px, calc(100% - 40px));
+        margin: 0 auto 30px;
+        color: rgba(255, 255, 255, 0.82);
+        font: 400 18px/1.65 Doloman, Montserrat, Arial, sans-serif;
+        letter-spacing: 0.015em;
       }
 
       a:hover,
@@ -355,9 +442,9 @@
         align-items: center;
         justify-content: center;
         gap: 10px;
-        border: 1px solid rgba(215, 183, 122, 0.78);
+        border: 1px solid rgba(202, 168, 110, 0.82);
         border-radius: 999px;
-        background: rgba(52, 46, 43, 0.96);
+        background: rgba(64, 57, 54, 0.97);
         color: #fff;
         box-shadow: 0 12px 34px rgba(0, 0, 0, 0.32);
         cursor: pointer;
@@ -387,7 +474,7 @@
         bottom: calc(100% + 12px);
         width: min(286px, calc(100vw - 36px));
         padding: 10px;
-        border: 1px solid rgba(52, 46, 43, 0.14);
+        border: 1px solid rgba(64, 57, 54, 0.14);
         border-radius: 16px;
         background: var(--spatial-ivory);
         box-shadow: 0 22px 60px rgba(0, 0, 0, 0.34);
@@ -529,6 +616,17 @@
     }
   }
 
+  function enhanceFooter() {
+    const footer = document.querySelector('.smallbadaboom');
+    if (!footer || footer.querySelector('.spatial-footer-intro')) return;
+
+    const intro = document.createElement('div');
+    intro.className = 'spatial-footer-intro';
+    intro.textContent =
+      'SPATIAL — авторский свет для частных и общественных интерьеров. Проектируем, изготавливаем и персонализируем светильники в собственной мастерской.';
+    footer.prepend(intro);
+  }
+
   function initContactHub() {
     if (document.getElementById('spatial-contact-hub')) return;
 
@@ -597,8 +695,10 @@
 
   document.addEventListener('DOMContentLoaded', function () {
     renderCart();
+    applyMicroBrandPalette();
     installMicroBrandStyles();
     applyMicroBrandText();
+    enhanceFooter();
     initContactHub();
   });
 })();
