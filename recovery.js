@@ -20,6 +20,19 @@
     '/spatial-copy-demo/spatial-index__curr_usd.html',
     '/spatial-copy-demo/spatial-index__curr_eur.html',
   ]);
+  const MICRO_BRAND_TEXT = new Map([
+    ['Каталог', 'Коллекции'],
+    ['Складская программа', 'В наличии'],
+    ['3D модели', '3D-модели'],
+    ['Электронный каталог и 3D модели', 'Каталог и 3D-модели'],
+    ['Ваши проекты', 'Проекты'],
+    ['ВЫПОЛНЕННЫЕ ПРОЕКТЫ', 'РЕАЛИЗОВАННЫЕ ПРОЕКТЫ'],
+    ['Команда SPATIAL', 'О бренде'],
+    ['Новости', 'Журнал'],
+    ['Светильники SPATIAL', 'Коллекции SPATIAL'],
+    ['мы делаем свет', 'свет как искусство'],
+    ['Стильное и модное освещение', 'Современный свет с характером'],
+  ]);
   let searchIndexPromise;
 
   window.ym = window.ym || function () {};
@@ -80,7 +93,7 @@
     try {
       const parsed = JSON.parse(localStorage.getItem(CART_KEY) || '[]');
       return Array.isArray(parsed) ? parsed : [];
-    } catch (_error) {
+    } catch {
       return [];
     }
   }
@@ -246,7 +259,10 @@
     true,
   );
 
-  const nativeSubmit = HTMLFormElement.prototype.submit;
+  const nativeSubmit = Object.getOwnPropertyDescriptor(
+    HTMLFormElement.prototype,
+    'submit',
+  ).value;
   HTMLFormElement.prototype.submit = function () {
     if (this.id === 'fsearch') {
       if (typeof window.runSearch === 'function') window.runSearch();
@@ -256,8 +272,333 @@
       showOfflineNotice();
       return;
     }
-    nativeSubmit.call(this);
+    Reflect.apply(nativeSubmit, this, []);
   };
 
-  document.addEventListener('DOMContentLoaded', renderCart);
+  function installMicroBrandStyles() {
+    const themeColor = document.querySelector('meta[name="theme-color"]');
+    if (themeColor) themeColor.setAttribute('content', '#342e2b');
+
+    const style = document.createElement('style');
+    style.id = 'spatial-micro-brand-styles';
+    style.textContent = `
+      :root {
+        --spatial-charcoal: #342e2b;
+        --spatial-charcoal-deep: #211d1b;
+        --spatial-champagne: #d7b77a;
+        --spatial-champagne-light: #ead5ad;
+        --spatial-ivory: #f7f3ed;
+      }
+
+      #mens,
+      #sear,
+      .spatialCart,
+      #cooksnows,
+      .layout2,
+      .layshow2 {
+        background-color: var(--spatial-charcoal) !important;
+      }
+
+      #pcmnu,
+      #showlangm,
+      #showcurrm,
+      #liveResults {
+        background-color: var(--spatial-charcoal-deep) !important;
+      }
+
+      .drk2 {
+        background-image: linear-gradient(to bottom, rgba(33, 29, 27, 0.98) 10%, transparent 100%) !important;
+      }
+
+      .drk22 {
+        background-image: linear-gradient(to bottom, rgba(25, 22, 20, 0.94) 30%, transparent 98%) !important;
+      }
+
+      a:hover,
+      a:focus-visible {
+        color: var(--spatial-champagne-light);
+      }
+
+      input[type="text"]:focus,
+      input[type="tel"]:focus,
+      input[type="email"]:focus,
+      input[type="password"]:focus,
+      select:focus,
+      textarea:focus {
+        border-color: var(--spatial-champagne) !important;
+      }
+
+      a.callback-bt3,
+      .callback-bt.callback-bt2,
+      .callback-bt.callbb {
+        display: none !important;
+      }
+
+      #spatial-contact-hub {
+        position: fixed;
+        right: clamp(18px, 3vw, 42px);
+        bottom: clamp(18px, 3vw, 34px);
+        z-index: 10020;
+        font-family: Montserrat, Arial, sans-serif;
+        transition: bottom 0.25s ease;
+      }
+
+      #spatial-contact-hub.spatial-contact-hub--cookies-visible {
+        bottom: 118px;
+      }
+
+      .spatial-contact-trigger {
+        min-width: 152px;
+        height: 54px;
+        padding: 0 19px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border: 1px solid rgba(215, 183, 122, 0.78);
+        border-radius: 999px;
+        background: rgba(52, 46, 43, 0.96);
+        color: #fff;
+        box-shadow: 0 12px 34px rgba(0, 0, 0, 0.32);
+        cursor: pointer;
+        font: 500 13px/1 Montserrat, Arial, sans-serif;
+        letter-spacing: 0.04em;
+        transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+      }
+
+      .spatial-contact-trigger:hover,
+      .spatial-contact-trigger:focus-visible,
+      #spatial-contact-hub.is-open .spatial-contact-trigger {
+        transform: translateY(-2px);
+        border-color: var(--spatial-champagne-light);
+        background: var(--spatial-charcoal-deep);
+        color: #fff;
+        outline: none;
+      }
+
+      .spatial-contact-trigger i {
+        color: var(--spatial-champagne-light);
+        font-size: 18px;
+      }
+
+      .spatial-contact-menu {
+        position: absolute;
+        right: 0;
+        bottom: calc(100% + 12px);
+        width: min(286px, calc(100vw - 36px));
+        padding: 10px;
+        border: 1px solid rgba(52, 46, 43, 0.14);
+        border-radius: 16px;
+        background: var(--spatial-ivory);
+        box-shadow: 0 22px 60px rgba(0, 0, 0, 0.34);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px) scale(0.98);
+        transform-origin: right bottom;
+        pointer-events: none;
+        transition: opacity 0.18s ease, visibility 0.18s ease, transform 0.18s ease;
+      }
+
+      #spatial-contact-hub.is-open .spatial-contact-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0) scale(1);
+        pointer-events: auto;
+      }
+
+      .spatial-contact-title {
+        padding: 8px 10px 10px;
+        color: #756a64;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .spatial-contact-option {
+        display: grid;
+        grid-template-columns: 42px 1fr;
+        gap: 11px;
+        align-items: center;
+        min-height: 58px;
+        padding: 8px 10px;
+        border-radius: 11px;
+        color: var(--spatial-charcoal) !important;
+        text-decoration: none;
+        transition: background-color 0.18s ease, transform 0.18s ease;
+      }
+
+      .spatial-contact-option:hover,
+      .spatial-contact-option:focus-visible {
+        background: #eee7dc;
+        color: var(--spatial-charcoal-deep) !important;
+        transform: translateX(2px);
+        outline: none;
+      }
+
+      .spatial-contact-option-icon {
+        width: 42px;
+        height: 42px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 21px;
+      }
+
+      .spatial-contact-option-icon.whatsapp { background: #268f55; }
+      .spatial-contact-option-icon.telegram { background: #2f88b7; }
+      .spatial-contact-option-icon.max { background: #6550a4; }
+      .spatial-contact-option-icon.max img { width: 27px; height: 27px; border-radius: 50%; }
+
+      .spatial-contact-option strong,
+      .spatial-contact-option small {
+        display: block;
+      }
+
+      .spatial-contact-option strong {
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .spatial-contact-option small {
+        margin-top: 4px;
+        color: #80756f;
+        font-size: 11px;
+        line-height: 1.35;
+      }
+
+      .mobo a:has(img[src*="spatial.su.svg"]) img {
+        width: 110px !important;
+        height: 20px;
+        object-fit: cover;
+        object-position: top;
+      }
+
+      .mobo a:has(img[src*="spatial.su.svg"])::after {
+        content: 'свет как искусство';
+        display: block;
+        width: 110px;
+        margin-top: 2px;
+        color: rgba(255, 255, 255, 0.76);
+        font: 500 7px/1.15 Montserrat, Arial, sans-serif;
+        letter-spacing: 0.13em;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      @media (max-width: 600px) {
+        #spatial-contact-hub.spatial-contact-hub--cookies-visible { bottom: 140px; }
+
+        .spatial-contact-trigger {
+          min-width: 54px;
+          width: 54px;
+          padding: 0;
+        }
+
+        .spatial-contact-trigger span { display: none; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        #spatial-contact-hub,
+        .spatial-contact-trigger,
+        .spatial-contact-menu,
+        .spatial-contact-option {
+          transition: none !important;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
+  function applyMicroBrandText() {
+    if (MICRO_BRAND_TEXT.has(document.title)) {
+      document.title = MICRO_BRAND_TEXT.get(document.title);
+    }
+
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    let node;
+    while ((node = walker.nextNode())) {
+      const parent = node.parentElement;
+      if (!parent || parent.closest('script, style, noscript, textarea')) continue;
+      const current = node.nodeValue || '';
+      const trimmed = current.trim();
+      const replacement = MICRO_BRAND_TEXT.get(trimmed);
+      if (!replacement) continue;
+      node.nodeValue = current.replace(trimmed, replacement);
+    }
+  }
+
+  function initContactHub() {
+    if (document.getElementById('spatial-contact-hub')) return;
+
+    const hub = document.createElement('div');
+    hub.id = 'spatial-contact-hub';
+    hub.innerHTML = `
+      <div class="spatial-contact-menu" id="spatial-contact-menu" role="menu" aria-hidden="true">
+        <div class="spatial-contact-title">Выберите мессенджер</div>
+        <a class="spatial-contact-option" href="https://api.whatsapp.com/send?phone=79160055407" target="_blank" rel="noopener nofollow" role="menuitem">
+          <span class="spatial-contact-option-icon whatsapp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></span>
+          <span><strong>WhatsApp</strong><small>Быстрый вопрос менеджеру</small></span>
+        </a>
+        <a class="spatial-contact-option" href="https://t.me/+79160055407" target="_blank" rel="noopener nofollow" role="menuitem">
+          <span class="spatial-contact-option-icon telegram"><i class="fa-brands fa-telegram" aria-hidden="true"></i></span>
+          <span><strong>Telegram</strong><small>Обсудить проект в чате</small></span>
+        </a>
+        <a class="spatial-contact-option" href="https://max.ru/u/f9LHodD0cOKGcW3T_kZSubTOT54_X9Hmkwg1WDJCWlp--yc7D1dqydu40Og" target="_blank" rel="noopener nofollow" role="menuitem">
+          <span class="spatial-contact-option-icon max"><img src="/spatial-copy-demo/i/max.png" alt=""></span>
+          <span><strong>MAX</strong><small>Связаться через MAX</small></span>
+        </a>
+      </div>
+      <button class="spatial-contact-trigger" type="button" aria-controls="spatial-contact-menu" aria-expanded="false" aria-label="Выбрать мессенджер">
+        <i class="fa-solid fa-comment-dots" aria-hidden="true"></i>
+        <span>Связаться</span>
+      </button>
+    `;
+    document.body.appendChild(hub);
+
+    const trigger = hub.querySelector('.spatial-contact-trigger');
+    const menu = hub.querySelector('.spatial-contact-menu');
+    const setOpen = (open) => {
+      hub.classList.toggle('is-open', open);
+      trigger.setAttribute('aria-expanded', String(open));
+      menu.setAttribute('aria-hidden', String(!open));
+    };
+
+    trigger.addEventListener('click', () => setOpen(!hub.classList.contains('is-open')));
+    document.addEventListener('click', (event) => {
+      if (!hub.contains(event.target)) setOpen(false);
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        setOpen(false);
+        trigger.focus();
+      }
+    });
+
+    const cookieNotice = document.getElementById('cooksnows');
+    if (cookieNotice) {
+      const syncCookieOffset = () => {
+        const cookieStyle = window.getComputedStyle(cookieNotice);
+        const isVisible =
+          cookieStyle.display !== 'none' &&
+          cookieStyle.visibility !== 'hidden' &&
+          Number(cookieStyle.opacity || 1) > 0 &&
+          cookieNotice.getBoundingClientRect().height > 0;
+        hub.classList.toggle('spatial-contact-hub--cookies-visible', isVisible);
+      };
+      syncCookieOffset();
+      new MutationObserver(syncCookieOffset).observe(cookieNotice, {
+        attributes: true,
+        attributeFilter: ['style', 'class'],
+      });
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    renderCart();
+    installMicroBrandStyles();
+    applyMicroBrandText();
+    initContactHub();
+  });
 })();
