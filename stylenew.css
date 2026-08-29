@@ -1,7 +1,7 @@
 @font-face {
     font-family: Doloman;
-    src: url(/spatial-copy/Doloman.eot);
-    src: local(Doloman), url(/spatial-copy/Doloman.ttf);
+    src: url(/spatial-copy-demo/Doloman.eot);
+    src: local(Doloman), url(/spatial-copy-demo/Doloman.ttf);
    }
 .logo{font-family: 'Doloman', sans-serif;color: #000; font-size: 29px; }
 html, body{background: #ffffff !important;
@@ -263,7 +263,7 @@ img{vertical-align:middle;}
 .lbtl:hover{border: 2px solid #a88f00 !important;background: #000 !important;}
 
 .krox{color: #7a7f84; font-size: 17px;padding-top: 0px; padding-bottom: 0px;}
-.bnr{background-color: #1b2024;min-height: 350px;background-image: url('/spatial-copy/i/banner.jpg');background-attachment: fixed;background-position: center top;}
+.bnr{background-color: #1b2024;min-height: 350px;background-image: url('/spatial-copy-demo/i/banner.jpg');background-attachment: fixed;background-position: center top;}
 .pods{color: #fff;font-size: 18px;}
 .tch{padding-left: 6px;padding-right: 6px;color: #768389; font-weight: bold;}
 .mh1{padding-top: 40px;text-transform: uppercase;padding-bottom: 10px;margin:0;text-align:Center;color: #000; font-weight: 500;font-size: 33px;}
@@ -383,7 +383,7 @@ a.mlds img{opacity: 1;filter: grayscale(0%);}
 .sp{transition: 0.2s;}
 .trans{transform: scale(1, -1);margin-top: -1px !important;transition: 0.2s;}
 .icat{position: absolute;transition: 0.2s;z-index: 2;bottom: 5px; right:10px;text-align:center;bottom: 13px;z-index: 9;}
-a.shds{background-image: url('/spatial-copy/i/hds.png'); display: block; z-index: 5; position: absolute;width: 100%; height: 40px;left: 0; bottom:-3px;}
+a.shds{background-image: url('/spatial-copy-demo/i/hds.png'); display: block; z-index: 5; position: absolute;width: 100%; height: 40px;left: 0; bottom:-3px;}
 .slist:hover .icat{display: block;opacity: 1 !important; transition: 0.2s;bottom: 15px;right: 11px;}
 .cates{display: none;
 position: absolute;z-index:99;background: #e2e2d5;
@@ -406,7 +406,7 @@ top: 38px;
 .smmob, .smmob2{display:inline;}
 .nomi15{margin-left: -10px;margin-right: -10px;}
 .team2{display:none;}
-.team{background-image: url('/spatial-copy/spatialteam.jpg');background-repeat: no-repeat; background-size: cover; height: 550px;background-position: center center; background-color: #131b1d;
+.team{background-image: url('/spatial-copy-demo/spatialteam.jpg');background-repeat: no-repeat; background-size: cover; height: 550px;background-position: center center; background-color: #131b1d;
 }
 a.tla, a.tlapc{float: left; padding: 12px;padding-top: 14px;padding-left: 8px;padding-right: 25px; text-transform: uppercase;font-family: 'Doloman', sans-serif !important; text-decoration: none; color: #fff; opacity: 1;font-size: 18px;}
 @media screen and (max-width: 1200px) {
@@ -498,7 +498,7 @@ a:hover.incats{border: 0px solid #aaa;background: #ffd426;color: #000;}
 	.nomoa{white-space: nowrap; overflow: hidden; overflow-x: auto;}
 	.mobcc{height: 130px;overflow: hidden;padding-bottom: 10px;margin-bottom: 20px;transition: 0.2s;}
 	.mobcca{height: auto;overflow: auto;margin-bottom: 20px;transition: 0.2s;}
-	.mobsshd{text-align:center; background-image: url('/spatial-copy/i/hds.png');height: 40px; bottom: 0;display: block; width: 100%; left: 0;position: absolute;}
+	.mobsshd{text-align:center; background-image: url('/spatial-copy-demo/i/hds.png');height: 40px; bottom: 0;display: block; width: 100%; left: 0;position: absolute;}
 a.mob100{float: none; width: 90%; font-size: 14px !important;margin: 0 auto;margin-bottom: 5px;}
 	.fimo{width: 100%; position: fixed;z-index: 70;background: #fff;}
 	.alsmb{width: 90% !important;text-align: left !important;margin-left: 0 !important;padding: 0 !important;padding-left: 8px !important;}
@@ -593,20 +593,20 @@ a.mob100{float: none; width: 90%; font-size: 14px !important;margin: 0 auto;marg
 	}
 	
 	#unitippoint { 
-		background: url(/spatial-copy/i/TipPoint.png) no-repeat; 
+		background: url(/spatial-copy-demo/i/TipPoint.png) no-repeat; 
 		height: 19px; 
 		overflow: hidden; 
 	}
 	
 	#unitipmid { 
-		background: url(/spatial-copy/i/TipMid.png) repeat; 
+		background: url(/spatial-copy-demo/i/TipMid.png) repeat; 
 		width: 115px;
 		height: auto; 
 		padding: 5px 15px;
 	}
 	
 	#unitipcap { 
-		background: url(/spatial-copy/i/TipCap.png) no-repeat; 
+		background: url(/spatial-copy-demo/i/TipCap.png) no-repeat; 
 		height: 7px; 
 		overflow: hidden; 
 	}

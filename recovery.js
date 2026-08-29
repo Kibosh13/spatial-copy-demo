@@ -4,21 +4,21 @@
   const nativeFetch = window.fetch.bind(window);
   const CART_KEY = 'spatial-static-cart-v1';
   const AVAILABLE_ROUTES = new Set([
-    '/spatial-copy/',
-    '/spatial-copy/catalog/',
-    '/spatial-copy/3d-models/',
-    '/spatial-copy/your-projects/',
-    '/spatial-copy/ourteam/',
-    '/spatial-copy/news/',
-    '/spatial-copy/stock/',
-    '/spatial-copy/contacts/',
-    '/spatial-copy/policy/',
-    '/spatial-copy/personal/',
-    '/spatial-copy/payments/',
-    '/spatial-copy/contacts/index__sevastopol.html',
-    '/spatial-copy/contacts/index__moscow.html',
-    '/spatial-copy/spatial-index__curr_usd.html',
-    '/spatial-copy/spatial-index__curr_eur.html',
+    '/spatial-copy-demo/',
+    '/spatial-copy-demo/catalog/',
+    '/spatial-copy-demo/3d-models/',
+    '/spatial-copy-demo/your-projects/',
+    '/spatial-copy-demo/ourteam/',
+    '/spatial-copy-demo/news/',
+    '/spatial-copy-demo/stock/',
+    '/spatial-copy-demo/contacts/',
+    '/spatial-copy-demo/policy/',
+    '/spatial-copy-demo/personal/',
+    '/spatial-copy-demo/payments/',
+    '/spatial-copy-demo/contacts/index__sevastopol.html',
+    '/spatial-copy-demo/contacts/index__moscow.html',
+    '/spatial-copy-demo/spatial-index__curr_usd.html',
+    '/spatial-copy-demo/spatial-index__curr_eur.html',
   ]);
   let searchIndexPromise;
 
@@ -34,7 +34,7 @@
   }
 
   function loadSearchIndex() {
-    searchIndexPromise ||= nativeFetch('/spatial-copy/search-index.json').then((response) =>
+    searchIndexPromise ||= nativeFetch('/spatial-copy-demo/search-index.json').then((response) =>
       response.ok ? response.json() : [],
     );
     return searchIndexPromise;
@@ -59,7 +59,7 @@
     const rawUrl = typeof input === 'string' ? input : input && input.url;
     if (rawUrl) {
       const url = new URL(rawUrl, window.location.href);
-      if (url.pathname === '/spatial-copy/search_live.php') {
+      if (url.pathname === '/spatial-copy-demo/search_live.php') {
         const query = (url.searchParams.get('q') || '').trim().toLocaleLowerCase('ru');
         const index = await loadSearchIndex();
         const matches = !query
@@ -233,7 +233,7 @@
       }
 
       const href = target.getAttribute('href');
-      if (href && href.startsWith('/spatial-copy/') && !href.startsWith('//')) {
+      if (href && href.startsWith('/spatial-copy-demo/') && !href.startsWith('//')) {
         const url = new URL(href, window.location.href);
         const hasFileExtension = /\.[a-z0-9]{2,5}$/i.test(url.pathname);
         if (url.origin === window.location.origin && !hasFileExtension && !AVAILABLE_ROUTES.has(url.pathname)) {

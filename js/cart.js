@@ -1,6 +1,6 @@
 function cart(a = 0){
 		lang = $('#_lang').val();
-		if(a == 0) $('#cartres').html('<div style="text-align:center;padding: 30px;"><img src="/spatial-copy/i/loader_black.svg" style="wdith: 32px;"/spatial-copy/></div>');
+		if(a == 0) $('#cartres').html('<div style="text-align:center;padding: 30px;"><img src="/spatial-copy-demo/i/loader_black.svg" style="wdith: 32px;"/spatial-copy-demo/></div>');
      
 var req = new JsHttpRequest();
         req.onreadystatechange = function() {
@@ -14,6 +14,6 @@ var req = new JsHttpRequest();
             }
       
         req.caching = false;
-        req.open('POST', '/spatial-copy/js/cart.php', true);
+        req.open('POST', '/spatial-copy-demo/js/cart.php', true);
         req.send({a:a, lang:lang});
 }

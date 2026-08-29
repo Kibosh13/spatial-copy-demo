@@ -27,7 +27,7 @@ var req = new JsHttpRequest();
         }
       
         req.caching = false;
-        req.open('POST', '/spatial-copy/js/tocart.php', true);
+        req.open('POST', '/spatial-copy-demo/js/tocart.php', true);
         req.send({});						
                
 }
