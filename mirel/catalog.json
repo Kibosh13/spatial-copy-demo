@@ -1,0 +1,797 @@
+{
+  "brand": {
+    "name": "MIREL",
+    "source": "https://mirel.su/",
+    "logoSource": "https://static.tildacdn.com/tild6537-3263-4631-b562-643231623236/photo-output_2.PNG",
+    "headline": "Дизайнерский свет для современных интерьеров",
+    "description": "Дизайнерские светильники MIREL для современных интерьеров. Авторские модели и изготовление под проект. Производство в Нижнем Новгороде.",
+    "phone": "+7 920 250-55-15",
+    "phoneHref": "tel:+79202505515",
+    "email": "mirel.su@mail.ru",
+    "contact": "Евгений Шипов",
+    "role": "Основатель бренда MIREL",
+    "address": "Нижний Новгород, ул. 2-я Оранжерейная, д. 4",
+    "telegram": "https://t.me/shevstars",
+    "instagram": "https://www.instagram.com/mirel.su?igsh=MTE2bjZrcjdlbmJ1aQ==",
+    "models3d": "https://drive.google.com/drive/folders/1XUJGduFe8eK3TRspNPcmJwp4xFMMxtQc?usp=sharing",
+    "why": [
+      "Почему выбирают MIREL",
+      "Современные технологии",
+      "Качественные материалы, запатентованные технологии, гарантия",
+      "Индивидуальное производство",
+      "Возможность изменить размеры и конфигурацию под ваш проект",
+      "Контроль качества",
+      "Собственное производство полного цикла в г. Нижний Новгород, полное сопровождение от первого эскиза до реализации",
+      "Смотреть каталог"
+    ],
+    "designers": [
+      "Работа с дизайнерами и архитекторами",
+      "Мы открыты к сотрудничеству с дизайнерами, архитекторами и комплектаторами.",
+      "Помогаем адаптировать размеры под проект или разработать индивидуальное решение.",
+      "Если вы работаете над частным или коммерческим интерьером, будем рады обсудить ваш проект.",
+      "Евгений Шипов",
+      "Основатель бренда MIREL",
+      "По вопросам сотрудничества, реализации проектов и индивидуальных решений вы можете связаться со мной напрямую.",
+      "📞 Телефон +79202505515",
+      "✉️ E-mail mirel.su@mail.ru"
+    ]
+  },
+  "products": [
+    {
+      "slug": "lumina",
+      "name": "LUMINA",
+      "url": "/spatial-copy-demo/lumina/",
+      "source": "https://mirel.su/lumina",
+      "price": "от 134 000 руб.",
+      "specs": [
+        {
+          "label": "Размеры",
+          "value": "1000×1000×1200 мм или по проекту"
+        },
+        {
+          "label": "Температура света",
+          "value": "3000 К или 4000 К; направление - вверх/вниз или вниз"
+        },
+        {
+          "label": "Материал",
+          "value": "полированный алюминий 2 мм, медь или латунь"
+        },
+        {
+          "label": "Технические параметры",
+          "value": "управление DIM/пульт; питание 24 V; мощность 110 W; световой поток 15500 lm; CRI 90+"
+        }
+      ],
+      "description": [],
+      "imageSources": [
+        "https://static.tildacdn.com/tild3835-3065-4136-b765-383463633934/IMG_1902.jpg",
+        "https://static.tildacdn.com/tild6334-3033-4333-b965-613030363166/IMG_4907.JPG",
+        "https://static.tildacdn.com/tild6533-3264-4836-a461-666236303438/IMG_1884.jpg",
+        "https://static.tildacdn.com/tild6239-3164-4130-a231-376532623263/IMG_1906.PNG"
+      ],
+      "images": [
+        "/spatial-copy-demo/mirel/512f66a1217cb15b.webp",
+        "/spatial-copy-demo/mirel/cccd4c0ed5c71e19.webp",
+        "/spatial-copy-demo/mirel/adfd3b53a32079e8.webp",
+        "/spatial-copy-demo/mirel/2aa9a8f004e86e46.webp"
+      ],
+      "coverSource": "https://static.tildacdn.com/tild6334-3033-4333-b965-613030363166/IMG_4907.JPG",
+      "cover": "/spatial-copy-demo/mirel/cccd4c0ed5c71e19.webp"
+    },
+    {
+      "slug": "node",
+      "name": "NODE",
+      "url": "/spatial-copy-demo/node/",
+      "source": "https://mirel.su/node",
+      "price": "от 117 600 руб",
+      "specs": [
+        {
+          "label": "Размеры",
+          "value": "1500×400×400 мм или по проекту"
+        },
+        {
+          "label": "Температура света",
+          "value": "3000 К, 4000 К"
+        },
+        {
+          "label": "Направление света",
+          "value": "вверх/вниз, вниз"
+        },
+        {
+          "label": "Материал",
+          "value": "полированный алюминий 2 мм, медь или латунь"
+        },
+        {
+          "label": "Технические параметры",
+          "value": "управление: DIM, пульт; напряжение питания 24 V; потребляемая мощность 75 W; световой поток 5400 lm; индекс цветопередачи 90+"
+        }
+      ],
+      "description": [],
+      "imageSources": [
+        "https://static.tildacdn.com/tild6430-3332-4930-b663-663732306531/IMG_9870.PNG",
+        "https://static.tildacdn.com/tild3938-6339-4564-a233-623463353136/IMG_1930_2.jpg",
+        "https://static.tildacdn.com/tild6165-3835-4435-b833-666130666566/IMG_1974.jpg"
+      ],
+      "images": [
+        "/spatial-copy-demo/mirel/1f26c152817c0187.webp",
+        "/spatial-copy-demo/mirel/f87657794d6104ae.webp",
+        "/spatial-copy-demo/mirel/f7c19dc217c7165e.webp"
+      ],
+      "coverSource": "https://static.tildacdn.com/tild3635-3066-4336-b237-396231383866/IMG_1930.jpg",
+      "cover": "/spatial-copy-demo/mirel/5ac8cf2fe8878b91.webp"
+    },
+    {
+      "slug": "serena",
+      "name": "SERENA",
+      "url": "/spatial-copy-demo/serena/",
+      "source": "https://mirel.su/serena",
+      "price": "от 126 500 руб.",
+      "specs": [
+        {
+          "label": "Размеры",
+          "value": "750×2100×300 мм или по проекту"
+        },
+        {
+          "label": "Температура света",
+          "value": "3000 К, 4000 К"
+        },
+        {
+          "label": "Направление света",
+          "value": "вверх/вниз, вниз"
+        },
+        {
+          "label": "Материал",
+          "value": "полированный алюминий 2 мм, медь или латунь"
+        },
+        {
+          "label": "Технические параметры",
+          "value": "управление: DIM, пульт; напряжение питания 24 V; потребляемая мощность 120 W; световой поток 9800 lm; индекс цветопередачи 90+"
+        }
+      ],
+      "description": [],
+      "imageSources": [
+        "https://static.tildacdn.com/tild3335-6339-4335-b630-376266326366/IMG_1968.jpg",
+        "https://static.tildacdn.com/tild3930-3638-4334-b339-646565663063/IMG_4910.JPG",
+        "https://static.tildacdn.com/tild3164-3938-4963-b335-633565366435/IMG_2176.jpg"
+      ],
+      "images": [
+        "/spatial-copy-demo/mirel/386f6b4d6ef3bc7b.webp",
+        "/spatial-copy-demo/mirel/7598b2120e6fd4a2.webp",
+        "/spatial-copy-demo/mirel/53f84cec2d873a29.webp"
+      ],
+      "coverSource": "https://static.tildacdn.com/tild3930-3638-4334-b339-646565663063/IMG_4910.JPG",
+      "cover": "/spatial-copy-demo/mirel/7598b2120e6fd4a2.webp"
+    },
+    {
+      "slug": "quadra",
+      "name": "QUADRA",
+      "url": "/spatial-copy-demo/quadra/",
+      "source": "https://mirel.su/quadra",
+      "price": "от 101 600 руб.",
+      "specs": [
+        {
+          "label": "Размеры",
+          "value": "600×600×600 мм или по проекту"
+        },
+        {
+          "label": "Температура света",
+          "value": "3000 К, 4000 К"
+        },
+        {
+          "label": "Направление света",
+          "value": "вверх/вниз, вниз"
+        },
+        {
+          "label": "Материал",
+          "value": "полированный алюминий 2 мм, медь или латунь"
+        },
+        {
+          "label": "Технические параметры",
+          "value": "управление: DIM, пульт; напряжение питания 24 V; потребляемая мощность 98 W; световой поток 8200 lm; индекс цветопередачи 90+"
+        }
+      ],
+      "description": [],
+      "imageSources": [
+        "https://static.tildacdn.com/tild6463-6539-4361-b733-623365663838/IMG_9876_2.PNG",
+        "https://static.tildacdn.com/tild3536-6239-4362-b066-356165353566/IMG_1972.jpg",
+        "https://static.tildacdn.com/tild3161-3765-4431-b665-623435663663/IMG_1921_2.jpg",
+        "https://static.tildacdn.com/tild6436-6331-4637-b863-366230396432/IMG_9891_3.PNG"
+      ],
+      "images": [
+        "/spatial-copy-demo/mirel/7e49ba62bdec2b12.webp",
+        "/spatial-copy-demo/mirel/148c68056adf8d9d.webp",
+        "/spatial-copy-demo/mirel/0779f20e30aaa8c1.webp",
+        "/spatial-copy-demo/mirel/a7cc2447fd798118.webp"
+      ],
+      "coverSource": "https://static.tildacdn.com/tild3836-3332-4338-b431-643232316663/IMG_1921.jpg",
+      "cover": "/spatial-copy-demo/mirel/a8bc529128d50014.webp"
+    },
+    {
+      "slug": "lattice",
+      "name": "LATTICE",
+      "url": "/spatial-copy-demo/lattice/",
+      "source": "https://mirel.su/lattice",
+      "price": "от 90 000 руб.",
+      "specs": [
+        {
+          "label": "Размеры",
+          "value": "1200×400×400 мм или по проекту"
+        },
+        {
+          "label": "Температура света",
+          "value": "3000 К, 4000 К"
+        },
+        {
+          "label": "Направление света",
+          "value": "вверх/вниз, вниз"
+        },
+        {
+          "label": "Материал",
+          "value": "полированный алюминий 2 мм, медь или латунь"
+        },
+        {
+          "label": "Технические параметры",
+          "value": "управление: DIM, пульт; напряжение питания 24 V; потребляемая мощность 60 W; световой поток 5100 lm; индекс цветопередачи 90+"
+        }
+      ],
+      "description": [],
+      "imageSources": [
+        "https://static.tildacdn.com/tild3833-3166-4935-a135-613562353935/IMG_1969.jpg",
+        "https://static.tildacdn.com/tild6631-6239-4466-b931-323437363431/IMG_1920_3.jpg",
+        "https://static.tildacdn.com/tild3033-6562-4539-a230-633339313336/IMG_1971.jpg"
+      ],
+      "images": [
+        "/spatial-copy-demo/mirel/4ab23c992b5ef802.webp",
+        "/spatial-copy-demo/mirel/a453de35a81df646.webp",
+        "/spatial-copy-demo/mirel/a7ebfeffdb2778c9.webp"
+      ],
+      "coverSource": "https://static.tildacdn.com/tild6465-3261-4566-b761-333339646561/IMG_4909.JPG",
+      "cover": "/spatial-copy-demo/mirel/051f359f6acddf21.webp"
+    },
+    {
+      "slug": "estelle",
+      "name": "ESTELLE",
+      "url": "/spatial-copy-demo/estelle/",
+      "source": "https://mirel.su/estelle",
+      "price": "от 173 520 руб",
+      "specs": [
+        {
+          "label": "Размеры",
+          "value": "800×800×600, 1000×1000×750 мм"
+        },
+        {
+          "label": "Температура света",
+          "value": "3000 К, 4000 К"
+        },
+        {
+          "label": "Направление света",
+          "value": "вверх/вниз, вниз"
+        },
+        {
+          "label": "Материал",
+          "value": "полированный алюминий 2 мм, медь или латунь"
+        },
+        {
+          "label": "Технические параметры",
+          "value": "управление: DIM, пульт; напряжение питания 24 V; потребляемая мощность 170/220 W; световой поток 14300/18000 lm; индекс цветопередачи 90+"
+        }
+      ],
+      "description": [],
+      "imageSources": [
+        "https://static.tildacdn.com/tild6337-6136-4532-b832-343639343233/IMG_9868_2.PNG",
+        "https://static.tildacdn.com/tild3263-6333-4362-b039-616430343163/IMG_9779.jpg",
+        "https://static.tildacdn.com/tild6439-6236-4237-b033-356264316633/IMG_9867.PNG"
+      ],
+      "images": [
+        "/spatial-copy-demo/mirel/c2d7e7bac362fad8.webp",
+        "/spatial-copy-demo/mirel/c0fef63fe5d01e88.webp",
+        "/spatial-copy-demo/mirel/808b4d7967214819.webp"
+      ],
+      "coverSource": "https://static.tildacdn.com/tild3937-3037-4431-b364-656661623165/IMG_1929.jpg",
+      "cover": "/spatial-copy-demo/mirel/ec191fd31f071b1b.webp"
+    },
+    {
+      "slug": "aurelia",
+      "name": "AURELIA",
+      "url": "/spatial-copy-demo/aurelia/",
+      "source": "https://mirel.su/aurelia",
+      "price": "от 126 500 руб.",
+      "specs": [
+        {
+          "label": "Размеры",
+          "value": "1100×1200 мм или по проекту"
+        },
+        {
+          "label": "Температура света",
+          "value": "3000 К, 4000 К"
+        },
+        {
+          "label": "Направление света",
+          "value": "вверх/вниз, вниз"
+        },
+        {
+          "label": "Материал",
+          "value": "полированный алюминий 2 мм, медь или латунь"
+        },
+        {
+          "label": "Технические параметры",
+          "value": "управление: DIM, пульт; напряжение питания 24 V; потребляемая мощность 100 W; световой поток 5800 lm; индекс цветопередачи 90+"
+        }
+      ],
+      "description": [],
+      "imageSources": [
+        "https://static.tildacdn.com/tild6261-6330-4861-b539-373935646664/IMG_3041.jpg",
+        "https://static.tildacdn.com/tild3035-6633-4436-a664-333662646438/IMG_3018.PNG",
+        "https://static.tildacdn.com/tild6262-3366-4433-a436-383664643734/IMG_3019.PNG",
+        "https://static.tildacdn.com/tild3333-3033-4462-b337-616234353264/IMG_3020.PNG"
+      ],
+      "images": [
+        "/spatial-copy-demo/mirel/61acc5c4e025cd8d.webp",
+        "/spatial-copy-demo/mirel/0bfd8f42c31ee163.webp",
+        "/spatial-copy-demo/mirel/1f99d0163f51190a.webp",
+        "/spatial-copy-demo/mirel/c1d448d453f394ac.webp"
+      ],
+      "coverSource": "https://static.tildacdn.com/tild3035-6633-4436-a664-333662646438/IMG_3018.PNG",
+      "cover": "/spatial-copy-demo/mirel/0bfd8f42c31ee163.webp"
+    },
+    {
+      "slug": "kinet",
+      "name": "KINET",
+      "url": "/spatial-copy-demo/kinet/",
+      "source": "https://mirel.su/kinet",
+      "price": "от 82 000 руб.",
+      "specs": [
+        {
+          "label": "Размеры",
+          "value": "800×400×400 мм или по проекту"
+        },
+        {
+          "label": "Температура света",
+          "value": "3000 К, 4000 К"
+        },
+        {
+          "label": "Направление света",
+          "value": "вверх/вниз, вниз"
+        },
+        {
+          "label": "Материал",
+          "value": "полированный алюминий 2 мм, медь или латунь"
+        },
+        {
+          "label": "Технические параметры",
+          "value": "управление: DIM, пульт; напряжение питания 24 V; потребляемая мощность 40 W; световой поток 3000 lm; индекс цветопередачи 90+"
+        }
+      ],
+      "description": [],
+      "imageSources": [
+        "https://static.tildacdn.com/tild3635-3765-4961-a637-666166373733/IMG_3039.PNG",
+        "https://static.tildacdn.com/tild3731-6265-4535-a663-343633376138/IMG_3015.PNG",
+        "https://static.tildacdn.com/tild3762-3235-4635-b331-373538356465/IMG_3016.PNG",
+        "https://static.tildacdn.com/tild3037-6561-4433-a134-313833623132/IMG_3022.PNG"
+      ],
+      "images": [
+        "/spatial-copy-demo/mirel/c08be0a3912a4eb0.webp",
+        "/spatial-copy-demo/mirel/6ee9c5c57ee9783e.webp",
+        "/spatial-copy-demo/mirel/89779de19fcbee97.webp",
+        "/spatial-copy-demo/mirel/1eeb58af86973410.webp"
+      ],
+      "coverSource": "https://static.tildacdn.com/tild3731-6265-4535-a663-343633376138/IMG_3015.PNG",
+      "cover": "/spatial-copy-demo/mirel/6ee9c5c57ee9783e.webp"
+    },
+    {
+      "slug": "corven",
+      "name": "CORVEN",
+      "url": "/spatial-copy-demo/corven/",
+      "source": "https://mirel.su/corven",
+      "price": "от 129 000 руб",
+      "specs": [
+        {
+          "label": "Размеры",
+          "value": "1400×400×600мм или по проекту"
+        },
+        {
+          "label": "Температура света",
+          "value": "3000 К, 4000 К"
+        },
+        {
+          "label": "Направление света",
+          "value": "вверх/вниз, вниз"
+        },
+        {
+          "label": "Материал",
+          "value": "полированный алюминий 2 мм, медь или латунь"
+        },
+        {
+          "label": "Технические параметры",
+          "value": "управление: DIM, пульт; напряжение питания 24 V; потребляемая мощность 178 W; световой поток 1420 lm; индекс цветопередачи 90+"
+        }
+      ],
+      "description": [],
+      "imageSources": [
+        "https://static.tildacdn.com/tild3438-6434-4666-b666-613965646264/IMG_2074.PNG",
+        "https://static.tildacdn.com/tild3463-6538-4333-a138-306636653464/IMG_2068.PNG",
+        "https://static.tildacdn.com/tild3831-6434-4538-a330-393234366366/IMG_2069.PNG"
+      ],
+      "images": [
+        "/spatial-copy-demo/mirel/93e1d26b3f3e08c0.webp",
+        "/spatial-copy-demo/mirel/81762cab7e096965.webp",
+        "/spatial-copy-demo/mirel/b4bfce38037b5ccf.webp"
+      ],
+      "coverSource": "https://static.tildacdn.com/tild3463-6538-4333-a138-306636653464/IMG_2068.PNG",
+      "cover": "/spatial-copy-demo/mirel/81762cab7e096965.webp"
+    },
+    {
+      "slug": "quadra-st",
+      "name": "QUADRA - ST",
+      "url": "/spatial-copy-demo/quadra-st/",
+      "source": "https://mirel.su/quadra-st",
+      "price": "от 72 000 руб",
+      "specs": [
+        {
+          "label": "Размеры",
+          "value": "1000×1000×300 мм или по проекту"
+        },
+        {
+          "label": "Температура света",
+          "value": "3000 К, 4000 К"
+        },
+        {
+          "label": "Направление света",
+          "value": "вверх/вниз, вниз"
+        },
+        {
+          "label": "Материал",
+          "value": "полированный алюминий 2 мм, медь или латунь"
+        },
+        {
+          "label": "Технические параметры",
+          "value": "управление: DIM, пульт; напряжение питания 24 V; потребляемая мощность W 60; световой поток 6200 lm; индекс цветопередачи 90+"
+        }
+      ],
+      "description": [],
+      "imageSources": [
+        "https://static.tildacdn.com/tild6436-6331-4637-b863-366230396432/IMG_9891_3.PNG",
+        "https://static.tildacdn.com/tild3938-6662-4630-b535-633433613965/IMG_9890.PNG",
+        "https://static.tildacdn.com/tild6463-6539-4361-b733-623365663838/IMG_9876_2.PNG"
+      ],
+      "images": [
+        "/spatial-copy-demo/mirel/a7cc2447fd798118.webp",
+        "/spatial-copy-demo/mirel/e39d47d332920580.webp",
+        "/spatial-copy-demo/mirel/7e49ba62bdec2b12.webp"
+      ],
+      "coverSource": "https://static.tildacdn.com/tild3938-6662-4630-b535-633433613965/IMG_9890.PNG",
+      "cover": "/spatial-copy-demo/mirel/e39d47d332920580.webp"
+    },
+    {
+      "slug": "velora",
+      "name": "VELORA",
+      "url": "/spatial-copy-demo/velora/",
+      "source": "https://mirel.su/velora",
+      "price": "от 75 000 руб",
+      "specs": [
+        {
+          "label": "Размеры",
+          "value": "800×800×600 мм или по проекту"
+        },
+        {
+          "label": "Температура света",
+          "value": "3000 К, 4000 К"
+        },
+        {
+          "label": "Направление света",
+          "value": "вверх/вниз, вниз"
+        },
+        {
+          "label": "Материал",
+          "value": "полированный алюминий 2 мм, медь или латунь"
+        },
+        {
+          "label": "Технические параметры",
+          "value": "управление: DIM, пульт; напряжение питания 24 V; потребляемая мощность 50 W; световой поток 4200 lm; индекс цветопередачи 90+"
+        }
+      ],
+      "description": [],
+      "imageSources": [
+        "https://static.tildacdn.com/tild3863-3763-4334-a338-393965393962/IMG_9915_2.jpg",
+        "https://static.tildacdn.com/tild3264-3938-4663-a632-386262386138/IMG_1923_2.jpg",
+        "https://static.tildacdn.com/tild3432-3133-4538-a364-313337336432/IMG_8991.PNG",
+        "https://static.tildacdn.com/tild6431-6438-4966-a263-346437656666/IMG_8990.PNG"
+      ],
+      "images": [
+        "/spatial-copy-demo/mirel/cbae7e2eb2f21ded.webp",
+        "/spatial-copy-demo/mirel/82b0f44bfe81d595.webp",
+        "/spatial-copy-demo/mirel/7e1ae151a6ad7eb2.webp",
+        "/spatial-copy-demo/mirel/ed03e307866c4116.webp"
+      ],
+      "coverSource": "https://static.tildacdn.com/tild3432-3139-4535-b533-366337343562/IMG_1923.jpg",
+      "cover": "/spatial-copy-demo/mirel/701e1bb0c0ea6e24.webp"
+    },
+    {
+      "slug": "axis",
+      "name": "AXIS",
+      "url": "/spatial-copy-demo/axis/",
+      "source": "https://mirel.su/axis",
+      "price": "от 94 000 руб",
+      "specs": [
+        {
+          "label": "Размеры",
+          "value": "450×1000×250 мм или по проекту"
+        },
+        {
+          "label": "Температура света",
+          "value": "3000 К, 4000 К"
+        },
+        {
+          "label": "Направление света",
+          "value": "вверх/вниз, вниз"
+        },
+        {
+          "label": "Материал",
+          "value": "полированный алюминий 2 мм, медь или латунь"
+        },
+        {
+          "label": "Технические параметры",
+          "value": "управление: DIM, пульт; напряжение питания 24 V; потребляемая мощность 36 W; световой поток 2700 lm; индекс цветопередачи 90+"
+        }
+      ],
+      "description": [],
+      "imageSources": [
+        "https://static.tildacdn.com/tild6231-3864-4862-b334-636136306365/IMG_9865_2.PNG",
+        "https://static.tildacdn.com/tild3338-6461-4661-b031-616237643632/IMG_1928.jpg"
+      ],
+      "images": [
+        "/spatial-copy-demo/mirel/1fd440437452d8d5.webp",
+        "/spatial-copy-demo/mirel/d06941639e4525e3.webp"
+      ],
+      "coverSource": "https://static.tildacdn.com/tild3338-6461-4661-b031-616237643632/IMG_1928.jpg",
+      "cover": "/spatial-copy-demo/mirel/d06941639e4525e3.webp"
+    },
+    {
+      "slug": "modul",
+      "name": "MODUL",
+      "url": "/spatial-copy-demo/modul/",
+      "source": "https://mirel.su/modul",
+      "price": "от 270 000 руб",
+      "specs": [
+        {
+          "label": "Размеры",
+          "value": "420×1400×800 мм или по проекту"
+        },
+        {
+          "label": "Температура света",
+          "value": "3000 К, 4000 К"
+        },
+        {
+          "label": "Направление света",
+          "value": "вверх/вниз, вниз"
+        },
+        {
+          "label": "Материал",
+          "value": "полированный алюминий 2 мм, медь или латунь"
+        },
+        {
+          "label": "Технические параметры",
+          "value": "управление: DIM, пульт; напряжение питания 24 V; потребляемая мощность 200 W; световой поток 9000 lm; индекс цветопередачи 90+"
+        }
+      ],
+      "description": [],
+      "imageSources": [
+        "https://static.tildacdn.com/tild6432-3737-4034-b961-373931396463/IMG_9844.PNG",
+        "https://static.tildacdn.com/tild3661-3931-4635-b633-623135613738/IMG_1925.jpg"
+      ],
+      "images": [
+        "/spatial-copy-demo/mirel/091bc77d9feed849.webp",
+        "/spatial-copy-demo/mirel/7f23f16817407bcb.webp"
+      ],
+      "coverSource": "https://static.tildacdn.com/tild3661-3931-4635-b633-623135613738/IMG_1925.jpg",
+      "cover": "/spatial-copy-demo/mirel/7f23f16817407bcb.webp"
+    },
+    {
+      "slug": "elvar",
+      "name": "ELVAR",
+      "url": "/spatial-copy-demo/elvar/",
+      "source": "https://mirel.su/elvar",
+      "price": "от 124 000 руб",
+      "specs": [
+        {
+          "label": "Размеры",
+          "value": "1400×400×600 мм или по проекту"
+        },
+        {
+          "label": "Температура света",
+          "value": "3000 К, 4000 К"
+        },
+        {
+          "label": "Направление света",
+          "value": "вверх/вниз, вниз"
+        },
+        {
+          "label": "Материал",
+          "value": "полированный алюминий 2 мм, медь или латунь"
+        },
+        {
+          "label": "Технические параметры",
+          "value": "управление: DIM, пульт; напряжение питания 24 V; потребляемая мощность 82 W; световой поток 6900 lm; индекс цветопередачи 90+"
+        }
+      ],
+      "description": [],
+      "imageSources": [
+        "https://static.tildacdn.com/tild3038-6639-4437-b937-366665666563/IMG_9875_2.PNG",
+        "https://static.tildacdn.com/tild3563-6162-4463-b935-393339303864/IMG_2187.PNG"
+      ],
+      "images": [
+        "/spatial-copy-demo/mirel/ba843a0f0268e24b.webp",
+        "/spatial-copy-demo/mirel/2c5ddeb404e10f25.webp"
+      ],
+      "coverSource": "https://static.tildacdn.com/tild3563-6162-4463-b935-393339303864/IMG_2187.PNG",
+      "cover": "/spatial-copy-demo/mirel/2c5ddeb404e10f25.webp"
+    },
+    {
+      "slug": "ufo",
+      "name": "UFO",
+      "url": "/spatial-copy-demo/ufo/",
+      "source": "https://mirel.su/ufo",
+      "price": "от 115 000 руб.",
+      "specs": [
+        {
+          "label": "Размеры",
+          "value": "350×1100 мм или по проекту"
+        },
+        {
+          "label": "Температура света",
+          "value": "3000 К, 4000 К"
+        },
+        {
+          "label": "Направление света",
+          "value": "вверх/вниз,"
+        },
+        {
+          "label": "Материал",
+          "value": "полированный алюминий 2 мм, медь или латунь"
+        },
+        {
+          "label": "Технические параметры",
+          "value": "управление: DIM, пульт; напряжение питания 24 V; потребляемая мощность 200 W; световой поток 16500 lm; индекс цветопередачи 90+"
+        }
+      ],
+      "description": [],
+      "imageSources": [
+        "https://static.tildacdn.com/tild6336-3262-4634-a236-666263323432/IMG_3754.PNG",
+        "https://static.tildacdn.com/tild3431-6333-4636-b434-613930336434/IMG_3718.PNG",
+        "https://static.tildacdn.com/tild3531-3132-4633-a433-646237633738/IMG_3717.PNG",
+        "https://static.tildacdn.com/tild3130-3761-4463-a166-346561306166/IMG_3716.PNG"
+      ],
+      "images": [
+        "/spatial-copy-demo/mirel/4b8ed9b0bbeed8c4.webp",
+        "/spatial-copy-demo/mirel/0ac727d8a59e5ca3.webp",
+        "/spatial-copy-demo/mirel/d8dec56a6b552f31.webp",
+        "/spatial-copy-demo/mirel/1fda15872ae9f6f8.webp"
+      ],
+      "coverSource": "https://static.tildacdn.com/tild3531-3132-4633-a433-646237633738/IMG_3717.PNG",
+      "cover": "/spatial-copy-demo/mirel/d8dec56a6b552f31.webp"
+    },
+    {
+      "slug": "vexel",
+      "name": "VEXEL",
+      "url": "/spatial-copy-demo/vexel/",
+      "source": "https://mirel.su/vexel",
+      "price": "от 112 000 руб.",
+      "specs": [
+        {
+          "label": "Размеры",
+          "value": "800×400×400 мм или по проекту"
+        },
+        {
+          "label": "Температура света",
+          "value": "3000 К, 4000 К"
+        },
+        {
+          "label": "Направление света",
+          "value": "вверх/вниз"
+        },
+        {
+          "label": "Материал",
+          "value": "полированный алюминий 2 мм, медь или латунь"
+        },
+        {
+          "label": "Технические параметры",
+          "value": "управление: DIM, пульт; напряжение питания 24 V; потребляемая мощность 70 W; световой поток 7500 lm; индекс цветопередачи 90+"
+        }
+      ],
+      "description": [],
+      "imageSources": [
+        "https://static.tildacdn.com/tild3263-6331-4462-a536-313565376137/IMG_3763.jpg",
+        "https://static.tildacdn.com/tild6133-6462-4937-b735-336131366339/IMG_3711.PNG",
+        "https://static.tildacdn.com/tild6134-3837-4331-a334-356138303961/IMG_3759.PNG",
+        "https://static.tildacdn.com/tild6265-6630-4861-b963-666238666632/IMG_3714.PNG",
+        "https://static.tildacdn.com/tild3333-6361-4838-b865-333233633335/IMG_3760.PNG"
+      ],
+      "images": [
+        "/spatial-copy-demo/mirel/7794478aac030c6c.webp",
+        "/spatial-copy-demo/mirel/40bd122fd43e80a0.webp",
+        "/spatial-copy-demo/mirel/f4fe088e7c5437ff.webp",
+        "/spatial-copy-demo/mirel/dbed0f910a641a8c.webp",
+        "/spatial-copy-demo/mirel/4de33de7757c841b.webp"
+      ],
+      "coverSource": "https://static.tildacdn.com/tild6133-6462-4937-b735-336131366339/IMG_3711.PNG",
+      "cover": "/spatial-copy-demo/mirel/40bd122fd43e80a0.webp"
+    },
+    {
+      "slug": "calista",
+      "name": "CALISTA",
+      "url": "/spatial-copy-demo/calista/",
+      "source": "https://mirel.su/calista",
+      "price": "от 210 000 руб.",
+      "specs": [
+        {
+          "label": "Размеры",
+          "value": "1000×1000 мм или по проекту"
+        },
+        {
+          "label": "Температура света",
+          "value": "3000 К, 4000 К"
+        },
+        {
+          "label": "Направление света",
+          "value": "вниз"
+        },
+        {
+          "label": "Материал",
+          "value": "полированный алюминий 2 мм, медь или латунь"
+        },
+        {
+          "label": "Технические параметры",
+          "value": "управление: DIM, пульт; напряжение питания 24 V; потребляемая мощность 230 W; световой поток 18000 lm; индекс цветопередачи 90+"
+        }
+      ],
+      "description": [],
+      "imageSources": [
+        "https://static.tildacdn.com/tild3261-6234-4534-b533-343662383863/IMG_3757.PNG",
+        "https://static.tildacdn.com/tild6336-6537-4631-b965-303734333339/IMG_3709.PNG",
+        "https://static.tildacdn.com/tild3162-3838-4666-b534-396130303139/IMG_3762.PNG"
+      ],
+      "images": [
+        "/spatial-copy-demo/mirel/d7f69db7551e9c24.webp",
+        "/spatial-copy-demo/mirel/870f690534c345d8.webp",
+        "/spatial-copy-demo/mirel/d77110f72f541408.webp"
+      ],
+      "coverSource": "https://static.tildacdn.com/tild6336-6537-4631-b965-303734333339/IMG_3709.PNG",
+      "cover": "/spatial-copy-demo/mirel/870f690534c345d8.webp"
+    },
+    {
+      "slug": "luminamini",
+      "name": "LUMINA MINI",
+      "url": "/spatial-copy-demo/luminamini/",
+      "source": "https://mirel.su/luminamini",
+      "price": "от 84 000 руб.",
+      "specs": [
+        {
+          "label": "Размеры",
+          "value": "600×730 мм или по проекту"
+        },
+        {
+          "label": "Температура света",
+          "value": "3000 К или 4000 К; направление - вверх/вниз или вниз"
+        },
+        {
+          "label": "Материал",
+          "value": "полированный алюминий 2 мм, медь или латунь"
+        },
+        {
+          "label": "Технические параметры",
+          "value": "управление DIM/пульт; питание 24 V; мощность 100 W; световой поток 9500 lm; CRI 90+"
+        }
+      ],
+      "description": [],
+      "imageSources": [
+        "https://static.tildacdn.com/tild6663-3738-4033-a336-626137346232/IMG_4919.jpg",
+        "https://static.tildacdn.com/tild6566-6665-4835-b266-666164353738/IMG_4913.JPG"
+      ],
+      "images": [
+        "/spatial-copy-demo/mirel/34825ffcb757e7f7.webp",
+        "/spatial-copy-demo/mirel/d9f1efdfe0206708.webp"
+      ],
+      "coverSource": "https://static.tildacdn.com/tild6566-6665-4835-b266-666164353738/IMG_4913.JPG",
+      "cover": "/spatial-copy-demo/mirel/d9f1efdfe0206708.webp"
+    }
+  ]
+}

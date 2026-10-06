@@ -1,6 +1,6 @@
 function cart(a = 0){
 		lang = $('#_lang').val();
-		if(a == 0) $('#cartres').html('<div style="text-align:center;padding: 30px;"><img src="/spatial-copy-demo/i/loader_black.svg" style="wdith: 32px;"/spatial-copy-demo/></div>');
+		if(a == 0) $('#cartres').html('<div style="text-align:center;padding: 30px;"><img src="/spatial-copy-demo/i/loader_black.svg" style="wdith: 32px;"/></div>');
      
 var req = new JsHttpRequest();
         req.onreadystatechange = function() {

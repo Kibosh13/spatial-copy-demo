@@ -2,7 +2,7 @@
   'use strict';
 
   const nativeFetch = window.fetch.bind(window);
-  const CART_KEY = 'spatial-static-cart-v1';
+  const CART_KEY = 'mirel-static-cart-v1';
   const AVAILABLE_ROUTES = new Set([
     '/spatial-copy-demo/',
     '/spatial-copy-demo/catalog/',
@@ -19,6 +19,9 @@
     '/spatial-copy-demo/contacts/index__moscow.html',
     '/spatial-copy-demo/spatial-index__curr_usd.html',
     '/spatial-copy-demo/spatial-index__curr_eur.html',
+    '/spatial-copy-demo/lumina/', '/spatial-copy-demo/node/', '/spatial-copy-demo/serena/', '/spatial-copy-demo/quadra/', '/spatial-copy-demo/lattice/', '/spatial-copy-demo/estelle/',
+    '/spatial-copy-demo/aurelia/', '/spatial-copy-demo/kinet/', '/spatial-copy-demo/corven/', '/spatial-copy-demo/quadra-st/', '/spatial-copy-demo/velora/', '/spatial-copy-demo/axis/',
+    '/spatial-copy-demo/modul/', '/spatial-copy-demo/elvar/', '/spatial-copy-demo/ufo/', '/spatial-copy-demo/vexel/', '/spatial-copy-demo/calista/', '/spatial-copy-demo/luminamini/',
   ]);
   const MICRO_BRAND_TEXT = new Map([
     ['Каталог', 'Коллекции'],
@@ -183,7 +186,7 @@
           </div>`,
         )
         .join('')}
-      <div style="padding-top:22px;font-size:13px;line-height:1.5;opacity:.8">Товары сохранены в этом браузере. Для оформления свяжитесь с SPATIAL по телефону +7 916 005-54-07 или по электронной почте spatial.su@yandex.ru.</div>
+      <div style="padding-top:22px;font-size:13px;line-height:1.5;opacity:.8">Товары сохранены в этом браузере. Для оформления свяжитесь с MIREL по телефону +7 920 250-55-15 или по электронной почте mirel.su@mail.ru.</div>
     </div>`;
   }
 
@@ -227,9 +230,9 @@
       notice.style.cssText =
         'position:fixed;inset:0;z-index:10000000;background:rgba(35,30,27,.82);display:grid;place-items:center;padding:20px';
       notice.innerHTML = `<div style="width:min(520px,100%);background:#3a3330;color:#fff;padding:30px;border:1px solid rgba(255,255,255,.18);box-shadow:0 18px 70px rgba(0,0,0,.45);font-family:Montserrat,Arial,sans-serif">
-        <div style="font-size:24px;margin-bottom:14px">Свяжитесь с SPATIAL</div>
-        <div style="font-size:15px;line-height:1.7;opacity:.88">Эта форма была частью старого сервера и в восстановленной копии не отправляет данные. Оставить заявку можно напрямую:</div>
-        <div style="margin-top:18px;line-height:1.9"><a href="tel:+79160055407" style="color:#fff">+7 916 005-54-07</a><br><a href="mailto:spatial.su@yandex.ru" style="color:#fff">spatial.su@yandex.ru</a></div>
+        <div style="font-size:24px;margin-bottom:14px">Свяжитесь с MIREL</div>
+        <div style="font-size:15px;line-height:1.7;opacity:.88">По вопросам заказа и индивидуальных решений свяжитесь с нами напрямую:</div>
+        <div style="margin-top:18px;line-height:1.9"><a href="tel:+79202505515" style="color:#fff">+7 920 250-55-15</a><br><a href="mailto:mirel.su@mail.ru" style="color:#fff">mirel.su@mail.ru</a><br><a href="https://t.me/shevstars" target="_blank" rel="noopener" style="color:#fff">Telegram</a></div>
         <button type="button" data-close-recovery-notice style="margin-top:22px;padding:11px 22px;border:1px solid #fff;background:#fff;color:#231e1b;cursor:pointer">Закрыть</button>
       </div>`;
       document.body.appendChild(notice);
@@ -623,7 +626,7 @@
     const intro = document.createElement('div');
     intro.className = 'spatial-footer-intro';
     intro.textContent =
-      'SPATIAL — авторский свет для частных и общественных интерьеров. Проектируем, изготавливаем и персонализируем светильники в собственной мастерской.';
+      'MIREL — дизайнерские светильники для современных интерьеров. Авторские модели и изготовление под проект.';
     footer.prepend(intro);
   }
 
@@ -635,17 +638,17 @@
     hub.innerHTML = `
       <div class="spatial-contact-menu" id="spatial-contact-menu" role="menu" aria-hidden="true">
         <div class="spatial-contact-title">Выберите мессенджер</div>
-        <a class="spatial-contact-option" href="https://api.whatsapp.com/send?phone=79160055407" target="_blank" rel="noopener nofollow" role="menuitem">
+        <a class="spatial-contact-option" href="https://api.whatsapp.com/send?phone=79202505515" target="_blank" rel="noopener nofollow" role="menuitem">
           <span class="spatial-contact-option-icon whatsapp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></span>
           <span><strong>WhatsApp</strong><small>Быстрый вопрос менеджеру</small></span>
         </a>
-        <a class="spatial-contact-option" href="https://t.me/+79160055407" target="_blank" rel="noopener nofollow" role="menuitem">
+        <a class="spatial-contact-option" href="https://t.me/shevstars" target="_blank" rel="noopener nofollow" role="menuitem">
           <span class="spatial-contact-option-icon telegram"><i class="fa-brands fa-telegram" aria-hidden="true"></i></span>
           <span><strong>Telegram</strong><small>Обсудить проект в чате</small></span>
         </a>
-        <a class="spatial-contact-option" href="https://max.ru/u/f9LHodD0cOKGcW3T_kZSubTOT54_X9Hmkwg1WDJCWlp--yc7D1dqydu40Og" target="_blank" rel="noopener nofollow" role="menuitem">
-          <span class="spatial-contact-option-icon max"><img src="/spatial-copy-demo/i/max.png" alt=""></span>
-          <span><strong>MAX</strong><small>Связаться через MAX</small></span>
+        <a class="spatial-contact-option" href="tel:+79202505515" role="menuitem">
+          <span class="spatial-contact-option-icon telegram"><i class="fa-solid fa-phone" aria-hidden="true"></i></span>
+          <span><strong>Телефон</strong><small>+7 920 250-55-15</small></span>
         </a>
       </div>
       <button class="spatial-contact-trigger" type="button" aria-controls="spatial-contact-menu" aria-expanded="false" aria-label="Выбрать мессенджер">
