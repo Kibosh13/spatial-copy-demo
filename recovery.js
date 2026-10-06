@@ -394,7 +394,92 @@
       .smallbadaboom {
         background: var(--spatial-charcoal) !important;
         border-top: 1px solid rgba(225, 197, 142, 0.22);
+        padding: 42px 24px calc(36px + var(--spatial-cookie-height, 0px)) !important;
+        font: 400 16px/1.65 Roboto, Arial, sans-serif !important;
+        color: var(--spatial-ivory) !important;
       }
+
+      .mirel-brand-copy {
+        padding-bottom: 56px;
+        font-size: 20px;
+        line-height: 1.65;
+      }
+
+      .mirel-brand-copy p { margin: 0 0 16px; }
+      .mirel-brand-copy p:last-child { margin-bottom: 0; }
+
+      .mirel-footer-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+        gap: 12px 28px;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      .smallbadaboom a {
+        color: var(--spatial-ivory);
+        display: inline-block;
+        margin: 0;
+        text-decoration: none;
+        overflow-wrap: anywhere;
+      }
+
+      .smallbadaboom a:hover,
+      .smallbadaboom a:focus-visible {
+        color: var(--spatial-champagne-light);
+        text-decoration: underline;
+        text-underline-offset: 5px;
+      }
+
+      .mirel-footer-address { margin-top: 18px; }
+      .mirel-footer-legal { margin-top: 28px; font-size: 14px; }
+      .mirel-footer-socials { margin-top: 24px; }
+      .mirel-footer-copyright { margin-top: 26px; color: rgba(245, 240, 233, .6); font-size: 14px; }
+
+      #cooksnows {
+        box-sizing: border-box;
+        background: var(--spatial-charcoal-deep) !important;
+        border-top: 1px solid rgba(225, 197, 142, .25);
+        opacity: 1 !important;
+        color: var(--spatial-ivory) !important;
+        font: 400 14px/1.6 Roboto, Arial, sans-serif !important;
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+      }
+
+      #cooksnows .mirel-cookie-inner {
+        display: flex !important;
+        align-items: center;
+        gap: 20px;
+        box-sizing: border-box;
+        width: min(1100px, 100%);
+        margin: 0 auto;
+        padding: 16px 24px !important;
+        text-align: left;
+      }
+
+      #cooksnows .mirel-cookie-copy { flex: 1; padding: 0 !important; float: none; text-align: left !important; }
+      #cooksnows .mirel-cookie-action { float: none; flex: none; width: auto !important; margin: 0 !important; }
+      #cooksnows .mirel-cookie-copy a {
+        color: var(--spatial-champagne-light) !important;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      #cooksnows .mirel-cookie-button {
+        min-height: 42px;
+        padding: 10px 24px;
+        border: 1px solid var(--spatial-champagne);
+        border-radius: 999px;
+        background: transparent;
+        color: var(--spatial-ivory);
+        font: 500 14px/1.4 Roboto, Arial, sans-serif;
+        cursor: pointer;
+      }
+
+      #cooksnows .mirel-cookie-button:hover { background: rgba(202, 168, 110, .12); }
+      #cooksnows .mirel-cookie-button:focus-visible { outline: 2px solid var(--spatial-champagne-light); outline-offset: 4px; }
 
       .spatial-footer-intro {
         width: min(680px, calc(100% - 40px));
@@ -403,6 +488,8 @@
         font: 400 18px/1.65 Doloman, Montserrat, Arial, sans-serif;
         letter-spacing: 0.015em;
       }
+
+      .smallbadaboom .spatial-footer-intro[hidden] { display: none; }
 
       a:hover,
       a:focus-visible {
@@ -434,7 +521,7 @@
       }
 
       #spatial-contact-hub.spatial-contact-hub--cookies-visible {
-        bottom: 118px;
+        bottom: calc(var(--spatial-cookie-height, 0px) + 18px);
       }
 
       .spatial-contact-trigger {
@@ -578,7 +665,13 @@
       }
 
       @media (max-width: 600px) {
-        #spatial-contact-hub.spatial-contact-hub--cookies-visible { bottom: 140px; }
+        .mirel-brand-copy { font-size: 18px; line-height: 1.7; padding-bottom: 40px; }
+        .smallbadaboom { padding-top: 32px !important; }
+        .mirel-footer-contacts { flex-direction: column; align-items: center; gap: 10px; }
+        .mirel-footer-legal { flex-direction: column; align-items: center; gap: 12px; }
+        .mirel-footer-socials { gap: 12px 24px; }
+        #cooksnows .mirel-cookie-inner { flex-direction: column; align-items: flex-end; gap: 12px; padding: 16px 20px !important; }
+        #cooksnows .mirel-cookie-copy { width: 100%; }
 
         .spatial-contact-trigger {
           min-width: 54px;
@@ -621,13 +714,61 @@
 
   function enhanceFooter() {
     const footer = document.querySelector('.smallbadaboom');
-    if (!footer || footer.querySelector('.spatial-footer-intro')) return;
+    if (!footer || footer.querySelector('.mirel-footer-row')) return;
 
-    const intro = document.createElement('div');
+    const intro = footer.querySelector('.spatial-footer-intro') || document.createElement('p');
     intro.className = 'spatial-footer-intro';
     intro.textContent =
       'MIREL — дизайнерские светильники для современных интерьеров. Авторские модели и изготовление под проект.';
-    footer.prepend(intro);
+    const brandCopy = document.querySelector('.mirel-brand-signature')?.closest('.mbga')?.querySelector('.mamo');
+    if (brandCopy) {
+      brandCopy.classList.add('mirel-brand-copy');
+      intro.hidden = true;
+    }
+
+    // Reuse the actual links so every route keeps its existing contacts and Pages base path.
+    const links = Array.from(footer.querySelectorAll('a'));
+    const row = (className, matches) => {
+      const group = document.createElement('div');
+      group.className = `mirel-footer-row ${className}`;
+      links.filter(matches).forEach((link) => group.appendChild(link));
+      return group;
+    };
+    const contacts = row('mirel-footer-contacts', (link) => /^(mailto:|tel:)/.test(link.getAttribute('href') || ''));
+    const address = row('mirel-footer-address', (link) => /\/contacts\/?$/.test(link.pathname));
+    const legal = row('mirel-footer-legal', (link) => /\/(policy|personal)\/?$/.test(link.pathname));
+    const socials = row('mirel-footer-socials', (link) => /^https?:/.test(link.getAttribute('href') || ''));
+    const copyright = document.createElement('div');
+    copyright.className = 'mirel-footer-copyright';
+    copyright.textContent = 'MIREL';
+    footer.setAttribute('role', 'contentinfo');
+    footer.replaceChildren(intro, contacts, address, legal, socials, copyright);
+  }
+
+  function enhanceCookieNotice() {
+    const notice = document.getElementById('cooksnows');
+    const inner = notice?.firstElementChild;
+    const columns = inner?.querySelectorAll(':scope > .fl');
+    const oldButton = notice?.querySelector('[onclick*="cookieagree"]');
+    if (!inner || columns.length !== 2 || !oldButton) return;
+
+    notice.setAttribute('role', 'region');
+    notice.setAttribute('aria-label', 'Уведомление о cookie');
+    // The original server checked this cookie when rendering the page. Static
+    // hosting must restore the same dismissal preference on the client instead.
+    if (document.cookie.split(';').some((cookie) => cookie.trim() === 'iagrees=1')) {
+      notice.style.display = 'none';
+    }
+    inner.classList.add('mirel-cookie-inner');
+    columns[0].classList.add('mirel-cookie-copy');
+    columns[1].classList.add('mirel-cookie-action');
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'mirel-cookie-button';
+    button.textContent = oldButton.textContent.trim();
+    button.addEventListener('click', () => window.cookieagree());
+    oldButton.replaceWith(button);
+    inner.querySelectorAll('.mobo, .cb').forEach((spacer) => spacer.remove());
   }
 
   function initContactHub() {
@@ -687,12 +828,17 @@
           Number(cookieStyle.opacity || 1) > 0 &&
           cookieNotice.getBoundingClientRect().height > 0;
         hub.classList.toggle('spatial-contact-hub--cookies-visible', isVisible);
+        document.documentElement.style.setProperty(
+          '--spatial-cookie-height',
+          `${isVisible ? Math.ceil(cookieNotice.getBoundingClientRect().height) : 0}px`,
+        );
       };
       syncCookieOffset();
       new MutationObserver(syncCookieOffset).observe(cookieNotice, {
         attributes: true,
         attributeFilter: ['style', 'class'],
       });
+      new ResizeObserver(syncCookieOffset).observe(cookieNotice);
     }
   }
 
@@ -702,6 +848,7 @@
     installMicroBrandStyles();
     applyMicroBrandText();
     enhanceFooter();
+    enhanceCookieNotice();
     initContactHub();
   });
 })();

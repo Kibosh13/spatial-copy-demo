@@ -72,10 +72,24 @@
         "/spatial-copy-demo/mirel/512f66a1217cb15b.webp",
         "/spatial-copy-demo/mirel/cccd4c0ed5c71e19.webp",
         "/spatial-copy-demo/mirel/adfd3b53a32079e8.webp",
-        "/spatial-copy-demo/mirel/2aa9a8f004e86e46.webp"
+        "/spatial-copy-demo/mirel/2aa9a8f004e86e46.webp",
+        "/spatial-copy-demo/mirel/customer-1bf3429316524663.webp",
+        "/spatial-copy-demo/mirel/customer-d9080b6a6d2fca08.webp"
       ],
       "coverSource": "https://static.tildacdn.com/tild6334-3033-4333-b965-613030363166/IMG_4907.JPG",
-      "cover": "/spatial-copy-demo/mirel/cccd4c0ed5c71e19.webp"
+      "cover": "/spatial-copy-demo/mirel/cccd4c0ed5c71e19.webp",
+      "customerPhotos": [
+        {
+          "name": "IMG_1885.PNG",
+          "source": "https://drive.google.com/file/d/1fMSYpj3PHcYYC4fjroB0nBGF0-KV8gVh/view",
+          "image": "/spatial-copy-demo/mirel/customer-1bf3429316524663.webp"
+        },
+        {
+          "name": "IMG_1905.PNG",
+          "source": "https://drive.google.com/file/d/1Zdj5YyDVJXTtMI7dHfJOUdy0M-9FLqq3/view",
+          "image": "/spatial-copy-demo/mirel/customer-d9080b6a6d2fca08.webp"
+        }
+      ]
     },
     {
       "slug": "node",
@@ -156,10 +170,36 @@
       "images": [
         "/spatial-copy-demo/mirel/386f6b4d6ef3bc7b.webp",
         "/spatial-copy-demo/mirel/7598b2120e6fd4a2.webp",
-        "/spatial-copy-demo/mirel/53f84cec2d873a29.webp"
+        "/spatial-copy-demo/mirel/53f84cec2d873a29.webp",
+        "/spatial-copy-demo/mirel/customer-980913d69e8168cc.webp",
+        "/spatial-copy-demo/mirel/customer-7ae895440ba89db9.webp",
+        "/spatial-copy-demo/mirel/customer-fadb09aea2317d30.webp",
+        "/spatial-copy-demo/mirel/customer-c23232c305613247.webp"
       ],
       "coverSource": "https://static.tildacdn.com/tild3930-3638-4334-b339-646565663063/IMG_4910.JPG",
-      "cover": "/spatial-copy-demo/mirel/7598b2120e6fd4a2.webp"
+      "cover": "/spatial-copy-demo/mirel/7598b2120e6fd4a2.webp",
+      "customerPhotos": [
+        {
+          "name": "Facetune_12-05-2026-18-15-29.HEIC",
+          "source": "https://drive.google.com/file/d/1AdaVsUvnQmim4tWNiCozkFSKQNL_JYUb/view",
+          "image": "/spatial-copy-demo/mirel/customer-980913d69e8168cc.webp"
+        },
+        {
+          "name": "IMG_1926.jpg",
+          "source": "https://drive.google.com/file/d/190W7ApsJdUL_P7yU38hGnKCjOFWlafzh/view",
+          "image": "/spatial-copy-demo/mirel/customer-7ae895440ba89db9.webp"
+        },
+        {
+          "name": "IMG_1927.PNG",
+          "source": "https://drive.google.com/file/d/1r3uOzT32CmcTu3zlmhlQ8sJIUIDHwpZC/view",
+          "image": "/spatial-copy-demo/mirel/customer-fadb09aea2317d30.webp"
+        },
+        {
+          "name": "IMG_1970.jpg",
+          "source": "https://drive.google.com/file/d/14FpfK3hdMNffopGbyQAaIPU7EibeytkJ/view",
+          "image": "/spatial-copy-demo/mirel/customer-c23232c305613247.webp"
+        }
+      ]
     },
     {
       "slug": "quadra",
@@ -284,10 +324,18 @@
       "images": [
         "/spatial-copy-demo/mirel/c2d7e7bac362fad8.webp",
         "/spatial-copy-demo/mirel/c0fef63fe5d01e88.webp",
-        "/spatial-copy-demo/mirel/808b4d7967214819.webp"
+        "/spatial-copy-demo/mirel/808b4d7967214819.webp",
+        "/spatial-copy-demo/mirel/customer-7e9622f23676bbaf.webp"
       ],
       "coverSource": "https://static.tildacdn.com/tild3937-3037-4431-b364-656661623165/IMG_1929.jpg",
-      "cover": "/spatial-copy-demo/mirel/ec191fd31f071b1b.webp"
+      "cover": "/spatial-copy-demo/mirel/ec191fd31f071b1b.webp",
+      "customerPhotos": [
+        {
+          "name": "IMG_1929 2.jpg",
+          "source": "https://drive.google.com/file/d/1ewSJ6RDwRSFyCjTHjhTHaoc_u2fUtr4J/view",
+          "image": "/spatial-copy-demo/mirel/customer-7e9622f23676bbaf.webp"
+        }
+      ]
     },
     {
       "slug": "aurelia",
@@ -328,10 +376,24 @@
         "/spatial-copy-demo/mirel/61acc5c4e025cd8d.webp",
         "/spatial-copy-demo/mirel/0bfd8f42c31ee163.webp",
         "/spatial-copy-demo/mirel/1f99d0163f51190a.webp",
-        "/spatial-copy-demo/mirel/c1d448d453f394ac.webp"
+        "/spatial-copy-demo/mirel/c1d448d453f394ac.webp",
+        "/spatial-copy-demo/mirel/customer-6b61b0ff25d4bbc9.webp",
+        "/spatial-copy-demo/mirel/customer-b249393504a502ba.webp"
       ],
       "coverSource": "https://static.tildacdn.com/tild3035-6633-4436-a664-333662646438/IMG_3018.PNG",
-      "cover": "/spatial-copy-demo/mirel/0bfd8f42c31ee163.webp"
+      "cover": "/spatial-copy-demo/mirel/0bfd8f42c31ee163.webp",
+      "customerPhotos": [
+        {
+          "name": "Facetune_28-07-2026-16-20-24.HEIC",
+          "source": "https://drive.google.com/file/d/1hS-YjyVbHMvA6nvkoWbTQQ-Df20lcocZ/view",
+          "image": "/spatial-copy-demo/mirel/customer-6b61b0ff25d4bbc9.webp"
+        },
+        {
+          "name": "IMG_3023.PNG",
+          "source": "https://drive.google.com/file/d/1cVhG4jMfVsEf0VlCCYEhoN3A-kNLLShl/view",
+          "image": "/spatial-copy-demo/mirel/customer-b249393504a502ba.webp"
+        }
+      ]
     },
     {
       "slug": "kinet",
@@ -372,10 +434,18 @@
         "/spatial-copy-demo/mirel/c08be0a3912a4eb0.webp",
         "/spatial-copy-demo/mirel/6ee9c5c57ee9783e.webp",
         "/spatial-copy-demo/mirel/89779de19fcbee97.webp",
-        "/spatial-copy-demo/mirel/1eeb58af86973410.webp"
+        "/spatial-copy-demo/mirel/1eeb58af86973410.webp",
+        "/spatial-copy-demo/mirel/customer-ebb9ccccecaf70f3.webp"
       ],
       "coverSource": "https://static.tildacdn.com/tild3731-6265-4535-a663-343633376138/IMG_3015.PNG",
-      "cover": "/spatial-copy-demo/mirel/6ee9c5c57ee9783e.webp"
+      "cover": "/spatial-copy-demo/mirel/6ee9c5c57ee9783e.webp",
+      "customerPhotos": [
+        {
+          "name": "IMG_3024.PNG",
+          "source": "https://drive.google.com/file/d/1qmhvoxrnaFxS0TRIZn_dS4aQ6afjJjLy/view",
+          "image": "/spatial-copy-demo/mirel/customer-ebb9ccccecaf70f3.webp"
+        }
+      ]
     },
     {
       "slug": "corven",
@@ -580,10 +650,18 @@
       ],
       "images": [
         "/spatial-copy-demo/mirel/091bc77d9feed849.webp",
-        "/spatial-copy-demo/mirel/7f23f16817407bcb.webp"
+        "/spatial-copy-demo/mirel/7f23f16817407bcb.webp",
+        "/spatial-copy-demo/mirel/customer-b5ad55cf7981ed77.webp"
       ],
       "coverSource": "https://static.tildacdn.com/tild3661-3931-4635-b633-623135613738/IMG_1925.jpg",
-      "cover": "/spatial-copy-demo/mirel/7f23f16817407bcb.webp"
+      "cover": "/spatial-copy-demo/mirel/7f23f16817407bcb.webp",
+      "customerPhotos": [
+        {
+          "name": "IMG_9403 3.jpg",
+          "source": "https://drive.google.com/file/d/16-MWi5fJRNV13vcYV0ajZMyfKFwiZt86/view",
+          "image": "/spatial-copy-demo/mirel/customer-b5ad55cf7981ed77.webp"
+        }
+      ]
     },
     {
       "slug": "elvar",
@@ -710,10 +788,30 @@
         "/spatial-copy-demo/mirel/40bd122fd43e80a0.webp",
         "/spatial-copy-demo/mirel/f4fe088e7c5437ff.webp",
         "/spatial-copy-demo/mirel/dbed0f910a641a8c.webp",
-        "/spatial-copy-demo/mirel/4de33de7757c841b.webp"
+        "/spatial-copy-demo/mirel/4de33de7757c841b.webp",
+        "/spatial-copy-demo/mirel/customer-64e138d65cf8b4aa.webp",
+        "/spatial-copy-demo/mirel/customer-0a1da8f0ff939b38.webp",
+        "/spatial-copy-demo/mirel/customer-57ddce7ae7978415.webp"
       ],
       "coverSource": "https://static.tildacdn.com/tild6133-6462-4937-b735-336131366339/IMG_3711.PNG",
-      "cover": "/spatial-copy-demo/mirel/40bd122fd43e80a0.webp"
+      "cover": "/spatial-copy-demo/mirel/40bd122fd43e80a0.webp",
+      "customerPhotos": [
+        {
+          "name": "Facetune_26-08-2026-01-11-26.heic",
+          "source": "https://drive.google.com/file/d/1BYvAG73OZIDFEYg8WvZryb8A_T4XdYBg/view",
+          "image": "/spatial-copy-demo/mirel/customer-64e138d65cf8b4aa.webp"
+        },
+        {
+          "name": "IMG_3712.PNG",
+          "source": "https://drive.google.com/file/d/14J6aQEzgAZJ7zXL6f_fQ8dbk2b7UNnY1/view",
+          "image": "/spatial-copy-demo/mirel/customer-0a1da8f0ff939b38.webp"
+        },
+        {
+          "name": "IMG_3713.PNG",
+          "source": "https://drive.google.com/file/d/1TzaMVT9gljYRTF2cvcOzz4PzyFhwuC0f/view",
+          "image": "/spatial-copy-demo/mirel/customer-57ddce7ae7978415.webp"
+        }
+      ]
     },
     {
       "slug": "calista",
@@ -752,10 +850,18 @@
       "images": [
         "/spatial-copy-demo/mirel/d7f69db7551e9c24.webp",
         "/spatial-copy-demo/mirel/870f690534c345d8.webp",
-        "/spatial-copy-demo/mirel/d77110f72f541408.webp"
+        "/spatial-copy-demo/mirel/d77110f72f541408.webp",
+        "/spatial-copy-demo/mirel/customer-e62ffbca860d8924.webp"
       ],
       "coverSource": "https://static.tildacdn.com/tild6336-6537-4631-b965-303734333339/IMG_3709.PNG",
-      "cover": "/spatial-copy-demo/mirel/870f690534c345d8.webp"
+      "cover": "/spatial-copy-demo/mirel/870f690534c345d8.webp",
+      "customerPhotos": [
+        {
+          "name": "IMG_3756.PNG",
+          "source": "https://drive.google.com/file/d/1CYt--CY7-sZ_jPWDo8x4Uep95zLkLOW2/view",
+          "image": "/spatial-copy-demo/mirel/customer-e62ffbca860d8924.webp"
+        }
+      ]
     },
     {
       "slug": "luminamini",

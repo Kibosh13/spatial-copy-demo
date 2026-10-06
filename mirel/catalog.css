@@ -29,6 +29,7 @@
 .mirel-product-note{font:400 14px/1.7 Montserrat,Arial,sans-serif;color:#c9c0b8;margin-top:22px}
 .mirel-product-swiper{width:100%;max-width:100%;min-width:0;overflow:hidden;border-radius:15px;--swiper-navigation-color:#fff;--swiper-navigation-size:26px}
 .mirel-product-swiper img{display:block;aspect-ratio:1;width:100%;object-fit:contain;background:#302925}
+.mirel-product-swiper .swiper-wrapper,.mirel-product-swiper .swiper-slide{height:auto}
 .mirel-product-swiper .swiper-button-prev,.mirel-product-swiper .swiper-button-next{background:#292321a8;width:36px;height:48px;border-radius:7px}
 .mirel-thumbs{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
 .mirel-thumbs button{width:calc(20% - 10px);aspect-ratio:1;padding:0;background:transparent;border:1px solid transparent;cursor:pointer;opacity:.55;border-radius:6px;overflow:hidden}
